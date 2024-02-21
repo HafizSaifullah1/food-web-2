@@ -1,0 +1,145 @@
+#header.fixed-top {
+    box-shadow: 0 0.1.25rem 0.675rem rgb(0, 0, 0 / 5%);
+
+}
+
+#header .navbar-nav .nav-item .nav-link {
+    color: black;
+    padding: 0.5rem 1rem;
+}
+
+#header .navbar-nav .nav-item .nav-link:hover,
+#header .navbar-nav .nav-item .nav-link.active {
+    color: #cdb179;
+}
+
+#header .navbar-toggler-icon {
+    width: unset;
+    height: unset;
+}
+
+#header .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+
+.home .home-banner-1,
+.home .home-banner-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 650px;
+    position: relative;
+}
+
+.home .home-banner-1 {
+    background-image: url(https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg);
+}
+
+.home .home-banner-2 {
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Vwd2s2MTY2MTU3Ny13aWtpbWVkaWEtaW1hZ2Uta293YXBlZWouanBn.jpg);
+}
+
+.home .home-banner .home-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-110% -50%);
+    color: white;
+}
+
+.home .home-banner .home-banner-text h1 {
+    font-size: 4rem;
+}
+
+.home .carousel-indicators [data-bs-target] {
+    background-color: ;
+    width: 2.5rem;
+    height: 0.313rem;
+}
+
+.home .carousel-control-next-logo,
+.home .carousel-control-prev-logo {
+    background: transparent;
+}
+
+.home .slider-icon {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #04ff8a;
+}
+
+
+.offers {
+    padding-top: 8.75rem;
+}
+
+.offers .offer-box .offer-image::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background-color: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+}
+
+.offers .offer-box .offer-image img {
+    transform: scale(1.02);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offers .offer-box:hover .offer-image::before {
+    animation: effect_shine 1s;
+
+}
+
+@keyframes effec_shine {
+    100% {
+        left: 150%
+    }
+
+}
+
+.offers .offer-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+.offers .offer-box offer-info{
+
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: all 250ms ease-out;
+    justify-content: center;
+    align-items: center;
+}
+.offers .offer-box offer-info .heading-bigger{
+    font-size: 4.375rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+
+}
